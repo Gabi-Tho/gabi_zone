@@ -1,6 +1,7 @@
 @import "./nav/nav-main.css";
 @import "./nav/nav-header.css";
-
+@import "./pages/carrousel.css";
+@import "./pages/aural.css";
 
 
 /* ---------regles generiques pour toutes les pages du sites------*/
