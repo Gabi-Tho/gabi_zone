@@ -1,56 +1,11 @@
-nav{
-    display: flex;
-}
-
-
-nav li:hover{
-   font-style: italic;
-
-}
-
-span{
-    /* color: white; */
-    padding: 10px;
-    font-size: 50px;
-}
-
-/*========== dropdown menu ============*/
-
-.dropdown-menu{
-    position: relative;
-
-}
-
-.dropdown-content{
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-}
-
-.dropdown-menu:not(:hover) .dropdown-content{
-    display: none;
-}
-
-.dropdown-content>li:hover{
-
-    /* background: white; */
-
-}
-
-
-
 
 
 /*========== body ============*/
 
 body{
-    background-color: rgb(179, 179, 179);
-    background-image: url("background_1.jpg"); 
-    background-image: url('../backgrounds/background_1.jpg');
-    height: 100vh;
 
-    /* background-image: url("./assets/img/background_1.jpg"); */
+    background-image: url("../../img/backgrounds/background_7_medium.jpg"); 
+
 }
 /*================ toggle menu ==============*/
 
@@ -65,29 +20,14 @@ body{
 
     }
 
-
-    .header{
-        /* color: rgb(252, 248, 248);
-        padding: 20px;
-        margin-top: 20px;
-        text-align: right;
-        height: 50%;
-        width: 100%; */
-    }
-
-    /* h3.header{
-        padding-top: 80px;
-    } */
-
     input[type=checkbox] {
 		appearance: none; 
-		/* -webkit-appearance: none;
-		/* background-color: #ACB992; */
-		padding: 5px;
+		/* -webkit-appearance: none;*/
+		padding: 20px;
 		border-radius: 3px;
 		position: absolute;
-		top: 55px;
-		right: 10px;
+		top: 50px;
+		right: 45px;
 		z-index: 2;
 	}
 
@@ -112,8 +52,7 @@ body{
     }
     
     nav>ul{
-
-        background-color: rgba(158, 96, 230, 0.123);
+        background-color: rgba(158, 96, 230, 0.349);
         justify-content: center;
         height: 100vh;
         flex-direction: column;
@@ -156,9 +95,6 @@ body{
         padding-right: 20px;
         transform: rotate(-40deg);
         width: 90px;
-
-
-    
     }
 
     li>a{
@@ -224,9 +160,7 @@ body{
 
     }
 
-    a.yellow{
-        margin-left: 20px;
-    }
+
 
     a.green:hover{
         color: green;
@@ -305,3 +239,6 @@ body{
     }
 
 }
+
+
+
