@@ -7,24 +7,20 @@
         /* background-color: #11cccc; */
         cursor: pointer;
       }
-      #content {
-        background-color: #9acd39;
-      }
       
       #menu-toggle {
         display: none;
       }
+
       #menu {
         overflow: hidden;
         height: 100vh;
         max-height: 0;
         padding: 0;
         margin: 0 auto;
-        -webkit-transition: all 0.3s ease;
+        -webkit-transition: all 0.5s ease;
         display: flex;
-        flex-direction: column;
-
-
+        flex-direction:column;
       }
       #menu-toggle:checked + #menu {
         max-height: 100%;
@@ -32,11 +28,18 @@
 
       #menu li {
         background-color: rgba(160, 156, 154, 0.76);
-        padding: 10px 20px 0px 0px;
+        padding: 10px;
         flex-grow: 1;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
+        text-decoration: none;
+        list-style-type: none;
+
+      }
+
+      li.list-item{
+        color: rgb(246, 242, 242);
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
       }
 
     /* =============== end toggle-menu functionality ===========*/
@@ -50,47 +53,25 @@
         margin: 0;
     }
 
-
-    div.container-aural {
-
-        display: flex;
-        width: 100vw;
-        height: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-end;
-        padding-left: 20px;
-
-
-    } 
-    div.container-aural-2 {
-
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-bottom: 30%;
-
-  
-
-    }
-
     div.container-header{
-        padding: 10px;
-        margin-left: 70%;
+        /* padding: 10px;
+        margin-left: 80%;
         margin-right: 0%;
-        padding: 5px;
-
+        padding: 5px; */
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-family: 'Fredoka One', cursive;
+        letter-spacing: 10px;
+        position: sticky;
+        top: 0px;
+        
     }
 
-    .box {
-      --mask: conic-gradient(from -137.5deg at right,#0000,#000 1deg 94deg,#0000 95deg) 50%/100% 26.19px;
-      -webkit-mask: var(--mask);
-              mask: var(--mask);
+    .site-header{
+      padding: 10px;
     }
-    .list-item>a{
-      transform: rotate(-90deg);
-    }
+
 
 }
 
