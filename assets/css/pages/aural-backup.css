@@ -1,78 +1,49 @@
 @media screen and (max-width: 800px){
 
-    nav>a {
-        padding: 10px;
-        outline: black;
-    }
-
-    nav>a:hover{
-
-        background-color: rgba(247, 200, 169, 0.76);
-    
-    }
-
-    nav>h3 {
-        padding: 10px;
-    }
-
-    
-/*======== dropdown navigation ======= */
+    /* ===============toggle-menu functionality ===========*/
 
 
-    span{
-
-        display: block;
-        padding: 10px;
-    }
-
-    span:hover{
-        background-color: rgba(247, 200, 169, 0.76);
-    }
-
-    .dropdown-container{
-
-        /* this allows top to function and position items */
-        position: relative;
-        display:block;
-
-    }
-
-    .dropdown-content{
-        margin-left: 15vw;
-        /* prevents the weird shift */
-        position: absolute;
-        /* use this to shift content without making weird gaps in containers */
-        top: 0;
-    }
-
-    .dropdown-content>a{
-        padding: 5px 10px 10px 10px;
-        display: block;
-    }
-
-/*======== dropdown navigation hover =======*/
-
-    .dropdown-container:not(:hover) .dropdown-content{
+    label {
+        /* background-color: #11cccc; */
+        cursor: pointer;
+      }
+      #content {
+        background-color: #9acd39;
+      }
+      
+      #menu-toggle {
         display: none;
-        background-color: rgb(247, 126, 45);
-    }
-
-    .icon:hover{
-
-        font-weight: 100;
-
-    }
-
-    .dropdown-content a:hover{
-
-        background-color: rgba(247, 200, 169, 0.76);
-    }
+      }
+      #menu {
+        overflow: hidden;
+        height: 100vh;
+        max-height: 0;
+        padding: 0;
+        margin: 0 auto;
+        -webkit-transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
 
 
-/*====================== grid ======================*/
+      }
+      #menu-toggle:checked + #menu {
+        max-height: 100%;
+      }
 
+      #menu li {
+        background-color: rgba(160, 156, 154, 0.76);
+        padding: 10px 20px 0px 0px;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+      }
+
+    /* =============== end toggle-menu functionality ===========*/
+
+      
     .container-body{
-        background-color: rgb(126, 126, 126);
+        background-image: url("../../img/backgrounds/background_3.jpg");
         display: flex;
         height: 100%;
         font-family: 'Fredoka One', cursive;
@@ -80,158 +51,48 @@
     }
 
 
-    .navigation-music {
-        /* display: flex;
-        flex-direction: column;
-        background-color: rgba(160, 156, 154, 0.76);
-        width: 40vw;
-        height: 100vh;
-        margin: 0; */
-
-        background-color: #ffa500;
-        /* width: 780px; */
-        overflow: hidden;
-        /* max-height: 0; */
-        padding: 0;
-        margin: 0 auto;
-        -webkit-transition: all 0.3s ease; 
-
-
-    }
-
-    .dropdown-container{
-
-
-
-    }
-
     div.container-aural {
 
         display: flex;
         width: 100vw;
         height: 100%;
         flex-direction: column;
-    }
-
-    .container-aural h3 {
-        font-size: 40px;
-        align-self: flex-end;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    header{
-        flex-direction: row;
-    }
-
-    /*======== dropdown navigation ======= */
+        flex-wrap: wrap;
+        align-content: flex-end;
+        padding-left: 20px;
 
 
-    span{
-
-        /* display: block;
-        padding: 10px; */
-    }
-
-    .dropdown-container{
-
-        /* this allows top to function and position items */
-        position: relative;
-        display:block;
-
-    }
-
-    .dropdown-content{
-
-        margin-left: 0;
-        margin-top: 40px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-
-    .container-img-aural {
-        width: 250px; 
-        height: 250px;
-        position: absolute;
-        margin-top: 360px;
-        margin-bottom: 10px;
-        left: 80px;
-        z-index: 1; 
-    }
-
-    .container-img-aural > img {
-        transform: rotate(-29deg);
-        width: 250px; 
-        height: 250px;
-        border-radius: 50%;
-        position: absolute;
-        margin-top: 100px;  
     } 
+    div.container-aural-2 {
 
-    .container {
-        width: 100vw;
-        height: 100%;
-        flex-basis: 0;
-        flex-grow: 1;
-        flex-direction: column;
-        overflow: hidden;
-        position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: 30%;
 
-     } 
+  
 
-    .icon-container{
-        display: block;
+    }
+
+    div.container-header{
         padding: 10px;
-        margin-top: auto;
-        justify-content: space-around;
-    }  
+        margin-left: 70%;
+        margin-right: 0%;
+        padding: 5px;
+
+    }
 
     .box {
-        --mask:
-          radial-gradient(10.00px at calc(100% - 10.00px) 50%,#000 99%,#0000 101%) 0 calc(50% - 20px)/100% 40px,
-          radial-gradient(10.00px at calc(100% + 0.00px) 50%,#0000 99%,#000 101%) calc(100% - 10px) 50%/100% 40px repeat-y;
-        -webkit-mask: var(--mask);
-                mask: var(--mask);
-      }
-
-     input[type=checkbox] {
-		appearance: none;  
-		padding: 5px;
-		border-radius: 3px;
-		position: absolute;
-		top: 55px;
-		right: 10px;
-		z-index: 2; 
-
-	}
-
-    input[type="checkbox"]::before {
-		content: "helo";
-
-	}
-
-	input[type="checkbox"]:checked::before {
-		content: "wooo";
-        color: white;
-        font-size: large;
-
-	}
-
-	input[type="checkbox"]:not(:checked)~ navigation-music {
-		opacity: 0;
-		pointer-events: none;
-        background-color: white;;
-
-    }  */
-
-
-
-
-    #menu-toggle:checked + #menu{
-        background-color: yellowgreen;
-      }
-
-    
+      --mask: conic-gradient(from -137.5deg at right,#0000,#000 1deg 94deg,#0000 95deg) 50%/100% 26.19px;
+      -webkit-mask: var(--mask);
+              mask: var(--mask);
+    }
+    .list-item>a{
+      transform: rotate(-90deg);
+    }
 
 }
+
+
+
